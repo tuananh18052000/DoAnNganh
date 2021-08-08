@@ -54,7 +54,7 @@ section{
     width: 100%;
     background: var(--white);
     padding: 1rem 7%;
-    z-index: 10;
+    z-index: 10000;
     box-shadow: var(--box-shadow);
 }
 .astore-header .scroll-bar{
@@ -314,7 +314,7 @@ figure.effect-apopllo:hover figcaption::before{
 
 /*Product*/
 .winter-collection{
-    background: url(/images/winter.jpg);
+    background: url(../images/winter.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -358,6 +358,11 @@ figure.effect-apopllo:hover figcaption::before{
 }
 .product .title{
     max-width: 50rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 .product .wrapper{
     position: relative;
@@ -369,28 +374,22 @@ figure.effect-apopllo:hover figcaption::before{
     box-shadow: 0rem 0rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 .product .wrapper .images{
-   height: 100%;
+    height: 100%;
     width: 100%;
     display: flex;
 }
 .product .wrapper .images .img-1{
+    display: block;
     height: 100%;
     width: 100%;
     background: url(https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) no-repeat;
     background-size: cover;
-}
-.product .wrapper .images .img-1{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 .product .wrapper .images .img-2{
     position: absolute;
     height: 100%;
     width: 50%;
-    background: url(https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) no-repeat;
-    background-size: cover;
-    filter: blur(.5rem);
+    background: url(https://images.unsplash.com/photo-1616788972987-806cd5b51a0b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=834&q=80) no-repeat;
     z-index: 10;
 }
 .product .wrapper .slider{
@@ -414,7 +413,7 @@ figure.effect-apopllo:hover figcaption::before{
 }
 .slider .drag-line{
     width: .3rem;
-    height: 40rem;
+    height: 100%;
     position: absolute;
     left: 49.75%;
     pointer-events: none;
@@ -461,10 +460,259 @@ figure.effect-apopllo:hover figcaption::before{
     left: 60%;
     border-top-color: var(--white);
 }
+.clearance-sales{
+    background: url(../images/clean-sales.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+.clearance-sales-text{
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 20rem 0;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+.clearance-sales-text h2{
+    font-size: 5rem;
+    color: var(--white);
+    text-shadow: .2rem .2rem #32323b;
+    margin-bottom: 2rem;
+}
+.clearance-sales-text h4{
+    color: var(--white);
+    font-size: 3rem;
+    text-shadow: .2rem .2rem #32323b;
+    margin-bottom: 2rem;
+}
+.clearance-sales-text h5{
+    font-size: 7.5rem;
+    color: var(--white);
+    text-shadow: .3rem .3rem #c41228;
+}
+.clearance-sales-text h5 small{
+    font-size: 3rem;
+    color: #eee;
+    text-shadow: .2rem .2rem #001c44;
+}
+
+/*Shopping*/
+.shopping .shopping-grid{
+    text-align: center;
+}
+.shopping .shopping-grid h3{
+    font-size: 3rem;
+    text-shadow: .1rem .1rem #001c44;
+}
+.shopping .shopping-grid .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.shopping .shopping-grid .content h4{
+    font-size: 2rem;
+}
+.shopping .image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70vh;
+    overflow: hidden;
+    flex: 1;
+    gap: 5rem;
+}
+.shopping .image .image-men{
+    position: relative;
+    min-width: 60rem;
+    height: 40rem;
+}
+.shopping .image .image-men .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.shopping .image .image-men .face span{
+    width: 15rem;
+    height: 100%;
+    transition: 1s;
+}
+.shopping .image .image-men .face-men-1 span{
+    background: url(https://images.unsplash.com/photo-1504593811423-6dd665756598?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    transform-origin: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shopping .image .image-men:hover .face-men-1 span{
+    transform: rotateX(90deg) translateY(-50%);
+}
+.shopping .image .image-men .face-men-2 span{
+    background: url(https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
+    transform-origin: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateX(90deg) translateY(50%);
+}
+.shopping .image .image-men:hover .face-men-2 span{
+    transform: rotateX(0deg) translateY(0);
+}
+.shopping .image .image-men .face-women-1 span{
+    background: url(https://images.unsplash.com/flagged/photo-1570733117311-d990c3816c47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    transform-origin: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.shopping .image .image-men:hover .face-women-1 span{
+    transform: rotateX(90deg) translateY(-50%);
+}
+.shopping .image .image-men .face-women-2 span{
+    background: url(https://images.unsplash.com/photo-1460402642842-fa689e470581?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    transform-origin: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateX(90deg) translateY(50%);
+}
+.shopping .image .image-men:hover .face-women-2 span{
+    transform: rotateX(0deg) translateY(0);
+}
+.shopping .image .image-men span:nth-child(1){
+    background-position-x: 0;
+    transition-delay: 0s;
+}
+.shopping .image .image-men span:nth-child(2){
+    background-position-x: -15rem;
+    transition-delay: 0.2s;
+}
+.shopping .image .image-men span:nth-child(3){
+    background-position-x: -30rem;
+    transition-delay: 0.4s;
+}
+.shopping .image .image-men span:nth-child(4){
+    background-position-x: -45rem;
+    transition-delay: 0.6s;
+}
+
+
+
+
+@media(max-width:1080px){
+    .clearance-sales-text{
+        padding: 17rem 0;
+    }
+    .clearance-sales-text h2{
+        font-size: 4rem;
+    }
+    .clearance-sales-text h5{
+        font-size: 6.5rem;
+    }
+    .clearance-sales-text h5 small{
+        font-size: 2rem;
+    }
+    .shopping .image .image-men .face{
+        margin: 0 15rem;
+    }
+}
 
 @media(max-width:991px){
+    
     .container-box{
         flex-wrap: wrap;
     }
+    .product .wrapper{
+        height: 30rem;
+    }
+    .slider input::-webkit-slider-thumb{
+        height: 30rem;
+    }
+}
 
+@media(max-width:768px){
+    .clearance-sales-text{
+        padding: 6.5rem 0;
+    }
+    .clearance-sales-text h2{
+        font-size: 2.8rem;
+    }
+    .clearance-sales-text h4{
+        font-size: 1.7rem;
+    }
+    .shopping .image .image-men{
+        width: 40rem;
+        height: 20rem;
+    }
+    .shopping .image .image-men .face{
+        margin: 0 15rem;
+    }
+    .shopping .image .image-men .face span{
+        width: 10rem;
+        height: 100%;
+        transition: 1s;
+    }
+    .shopping .image .image-men span:nth-child(1){
+        background-position-x: 0;
+        transition-delay: 0s;
+    }
+    .shopping .image .image-men span:nth-child(2){
+        background-position-x: -10rem;
+        transition-delay: 0.2s;
+    }
+    .shopping .image .image-men span:nth-child(3){
+        background-position-x: -20rem;
+        transition-delay: 0.4s;
+    }
+}
+@media(max-width:600px){
+    .shopping .image .image-men .face{
+        margin: 0 10rem;
+    }
+}
+@media(max-width:480px){
+    section{
+        padding: 2rem 0;
+    }
+    .home-laster {
+        padding: 0;
+    }
+    .winter-collection h1 {
+        font-size: 2rem;
+        padding: 2rem 0;
+        color: var(--white);
+    }
+    .winter-collection p {
+        font-size: 1.5rem;
+        width: 75%;
+        margin: 2rem auto;
+    }
+    .collection a {
+        padding: 1rem 2.5rem;       
+    }
+    .clearance-sales-text{
+        width: 100%;
+    }
+    .clearance-sales-text h2{
+        font-size: 1.4rem;
+        padding: .4rem;
+    }
+    .clearance-sales-text h4{
+        font-size: 1.3rem;
+        padding: .4rem;
+    }
+    .clearance-sales-text h5 smal{
+        font-size: 1.4rem;
+    }
+    .shopping .image .image-men .face{
+        margin: 0 3rem;
+    }
+}
+
+@media(max-width:320px){
+    .shopping .image .image-men .face{
+        margin: 0 .5rem;
+    }
 }
