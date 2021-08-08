@@ -314,7 +314,7 @@ figure.effect-apopllo:hover figcaption::before{
 
 /*Product*/
 .winter-collection{
-    background-image: url(/images/winter.jpg);
+    background: url(/images/winter.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
