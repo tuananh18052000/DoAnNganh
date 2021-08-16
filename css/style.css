@@ -39,11 +39,14 @@ section{
 }
 .btn{
     display: block;
+
     font-size: 2rem;
     padding: 1.2rem 2rem;
+
     background: var(--black);
     color: var(--white);
     box-shadow: var(--box-shadow);
+
     max-width: 15rem;
     margin: 2rem auto;
 }
@@ -51,18 +54,23 @@ section{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10000; 
+
     width: 100%;
+
     background: var(--white);
-    padding: 1rem 7%;
-    z-index: 10000;
     box-shadow: var(--box-shadow);
+
+    padding: 1rem 7%;  
 }
 .astore-header .scroll-bar{
     position: absolute;
     top: 100%;
     left: 0;
+
     width: 0;
     height: .8rem;
+
     box-shadow: var(--box-shadow);
     background: var(--black);
 }
@@ -73,6 +81,7 @@ section{
 }
 .astore-header .navbar .logo{
     color: var(--black);
+
     font-size: 2.5rem;
     font-weight: bolder;
 }
@@ -97,24 +106,29 @@ section{
 .astore-header .navbar .nav ul li a.active::before{
     content: '';
     position: absolute;
-    background-color: var(--black);
-    width: 100%;
-    height: 2px;
     bottom: -.75rem;
     left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--black);
 }
 .astore-header .navbar .icons i,
 .astore-header .navbar .icons a{
-    cursor: pointer;
     margin-left: .5rem;
     height: 4.5rem;
-    line-height: 4.5rem;
     width: 4.5rem;
+    border-radius: 50%;
+
     text-align: center;
     font-size: 1.7rem;
+    line-height: 4.5rem;
+
     color: var(--black);
-    border-radius: 50%;
     background: #eee;
+    
+    cursor: pointer;
 }
 #menu{
     display: none;
@@ -146,6 +160,7 @@ section{
 }
 .header-topbar-grid2 ul{
     padding-left: 0;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -171,6 +186,7 @@ section{
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+
     padding-top: 9rem;
 }
 .banner .banner-slider .slide .content{
@@ -188,27 +204,33 @@ section{
 .banner .content h3{
     max-width: 40rem;
     margin: 0 auto;
-    text-align: center;
+    
     color: var(--black);
+
     letter-spacing: .2rem;
     font-size: 2.3rem;
+    text-align: center;
 }
 .banner .content .line{
     height: .2rem;
-    background: var(--black);
     width: 16%;
     margin: 3rem auto;
+
+    background: var(--black);
+
     display: block;
 }
 .banner .content h2{
     border: .2rem solid var(--black);
     width: 50%;
-    font-size: 3rem;
     padding: .8rem 0;
     margin: 0 auto;
+
     color: var(--black);
+
     letter-spacing: .4rem;
     text-align: center;
+    font-size: 3rem;
 }
 .arrow{
     text-align: center;
@@ -235,15 +257,17 @@ section{
 }
 .home-laster-grid h4{
     margin-top: 2rem;
+
     text-align: center;
     font-size: 1.6rem;
     color: #555;
 }
 .home-laster-grid h5{
     text-align: center;
-    max-width: 40rem;
     font-weight: 400;
+
     margin: 1rem auto;
+    max-width: 40rem;
 }
 .home-laster-grid .btn:hover{
     background: var(--white);
@@ -253,6 +277,7 @@ section{
    position: relative;
    display: flex;
    overflow: hidden;
+   
    height: auto;
    margin-bottom: 1rem;
 }
@@ -287,9 +312,11 @@ figure.effect-apopllo figcaption::before{
     content: '';
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
     background: rgba(255,255,255,.5);
+
     transition: transform .6s;
     -webkit-transition: transform .6s;
     transform: scale3d(1,1.5,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
@@ -311,6 +338,7 @@ figure.effect-apopllo:hover figcaption::before{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     padding: 17rem 0 15rem;
     text-align: center;
 }
@@ -320,9 +348,11 @@ figure.effect-apopllo:hover figcaption::before{
 }
 .winter-collection p{
     font-size: 1.2rem;
+    line-height: 2.5rem;
+
     width: 50%;
     margin: 2rem auto;
-    line-height: 2.5rem;
+   
     color: var(--white)
 }
 .winter-shop{
@@ -334,6 +364,7 @@ figure.effect-apopllo:hover figcaption::before{
     padding: 1rem 5rem;
     border: .2rem solid var(--white);
     color: var(--white);
+
     display: inline-block;
 }
 .collection span{
@@ -352,9 +383,11 @@ figure.effect-apopllo:hover figcaption::before{
 .product .title{
     max-width: 50rem;
     padding: 0 2rem;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
+
     text-align: center;
 }
 .product .wrapper{
@@ -362,6 +395,7 @@ figure.effect-apopllo:hover figcaption::before{
     height: 40rem;
     width: 70rem;
     overflow: hidden;
+
     background: #fff;
     border: .7rem solid #fff;
     box-shadow: 0rem 0rem 1.5rem rgba(0, 0, 0, 0.15);
@@ -369,21 +403,24 @@ figure.effect-apopllo:hover figcaption::before{
 .product .wrapper .images{
     height: 100%;
     width: 100%;
+
     display: flex;
 }
 .product .wrapper .images .img-1{
     display: block;
     height: 100%;
     width: 100%;
+
     background: url(https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) no-repeat;
     background-size: cover;
 }
 .product .wrapper .images .img-2{
     position: absolute;
+     z-index: 10;
     height: 100%;
     width: 50%;
+
     background: url(https://images.unsplash.com/photo-1616788972987-806cd5b51a0b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=834&q=80) no-repeat;
-    z-index: 10;
 }
 .product .wrapper .slider{
     position: absolute;
@@ -430,9 +467,11 @@ figure.effect-apopllo:hover figcaption::before{
     width: 4rem;
     border: .3rem solid var(--white);
     border-radius: 50%;
+
     position: absolute;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%,-50%);
 }
 .slider .drag-line span::before,
@@ -440,6 +479,7 @@ figure.effect-apopllo:hover figcaption::before{
     position: absolute;
     content: '';
     top: 50%;
+
     border: 1rem solid transparent;
     border-bottom-width: 0rem;
     border-right-width: 0rem;
@@ -494,8 +534,9 @@ figure.effect-apopllo:hover figcaption::before{
 /*Shopping*/
 .shopping{
     min-height: 100vh;
-    display: flex;
     overflow: hidden;
+
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -503,6 +544,7 @@ figure.effect-apopllo:hover figcaption::before{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     margin: 2rem 5rem;
 }
 .shopping .container-shopping .container-shopping-content{
@@ -511,16 +553,18 @@ figure.effect-apopllo:hover figcaption::before{
 }
 .shopping .container-shopping .container-shopping-content .content-tilte{
     position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .shopping .container-shopping .container-shopping-content .content-tilte .content-choose{
     display: flex;
-    position: relative;
-    width: 110rem;
     justify-content: space-around;
     align-items: center;
+
+    position: relative;
+    width: 110rem;
 }
 .shopping .container-shopping .container-shopping-content .content-tilte .content-choose .content-text a{
     font-size: 1.4rem;
@@ -541,6 +585,7 @@ figure.effect-apopllo:hover figcaption::before{
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -607,32 +652,41 @@ figure.effect-apopllo:hover figcaption::before{
 /*Last New*/
 .lastNew{
     min-height: 70vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     overflow: hidden;
     background: linear-gradient(rgb(245, 227, 227),rgb(161, 187, 243))
 }
 .lastNew .container-card{
     position: relative;
+
     width: 110rem;
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+
     padding: 3rem;
 }
 .lastNew .container-card .lastNew-card{
     position: relative;
+
     max-width: 30rem;
     height: 22rem;
-    background: var(--white);
     margin: 3rem 2rem;
     padding: 2rem 1.5rem;
+
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    
     display: flex;
     flex-direction: column;
-    box-shadow: var(--box-shadow);
+
     transition: .5s ease-in-out;
 }
 .lastNew .container-card .lastNew-card:hover{
@@ -640,27 +694,34 @@ figure.effect-apopllo:hover figcaption::before{
 }
 .lastNew .container-card .lastNew-card .lastNew-card-img{
     position: relative;
-    width: 26rem;
-    min-height: 20rem;
     top: -4rem;
     left: .5rem;
     z-index: 1;
+
+    width: 26rem;
+    min-height: 20rem;
+   
     box-shadow: var(--box-shadow);
 }
 .lastNew .container-card .lastNew-card .lastNew-card-img img{
     max-width: 100%;
     height: 100%;
     object-fit: cover;
+
     border-radius: .5rem;
 }
 .lastNew .container-card .lastNew-card .lastNew-card-content{
     position: relative;
+
     margin-top: -14rem;
     padding: 1rem 1.5rem;
+
     visibility: hidden;
+
     text-align: center;
     color: #111;
     opacity: 0;
+
     transition: .3s ease-in-out;
 }
 .lastNew .container-card .lastNew-card .lastNew-card-content h2{
@@ -713,6 +774,7 @@ figure.effect-apopllo:hover figcaption::before{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+
     padding: 0 7rem;
 }
 .footer .container-box .footer-time{
@@ -723,6 +785,7 @@ figure.effect-apopllo:hover figcaption::before{
 .footer .container-box .footer-time .cols{
     display: flex;
     flex-direction: column;
+
     padding: 3.2rem;  
 }
 .footer .container-box .footer-time .cols span{
@@ -745,12 +808,14 @@ figure.effect-apopllo:hover figcaption::before{
 }
 .footer .container-box .footer-address .footer-address-tilte h4{
     color: var(--white);
+
     font-size: 2.5rem;
     font-weight: 700;
 }
 .footer .container-box .footer-address .footer-contact ul{
     display: flex; 
     flex-direction: column;
+
     padding: 0;
 }
 .footer .container-box .footer-address .footer-contact ul li a{
@@ -764,6 +829,7 @@ figure.effect-apopllo:hover figcaption::before{
 .footer .container-box .footer-address .footer-sci ul{
     display: flex;
     align-items: center;
+
     padding: 0;
 }
 .footer .container-box .footer-address .footer-sci ul li{
@@ -801,21 +867,26 @@ figure.effect-apopllo:hover figcaption::before{
     display: flex;
     justify-content: center;
     align-items: center;
+
     min-height: 100vh;
+
     background: linear-gradient(90deg,rgb(226, 217, 217),#fff);
 }
 .formlogin .container-form{
     position: relative;
+
     width: 60rem;
-    background: var(--white);
     padding: 6rem 4rem;
+
+    background: var(--white);
     box-shadow: var(--box-shadow);
 }
 .formlogin .container-form .header{
-    font-size: 4rem;
     margin-bottom: 3rem;
+
     font-weight: 700;
     text-align: center;
+    font-size: 4rem;
 }
 .form-signin{
     display: flex;
@@ -826,6 +897,7 @@ figure.effect-apopllo:hover figcaption::before{
 .form-group, 
 form .button{
     margin: 2.5rem 0;
+
     position: relative;
     height: 5rem;
     width: 100%;
@@ -836,9 +908,11 @@ form .button{
     width: 100%;
     padding: 1.5rem;
     border-radius: 1.2rem;
-    background-color: #f8f9fb;
     border: 0;
+
+    background-color: #f8f9fb;
     color: #212144;
+
     font-size: 1.3rem;
     transition: all 0.4s ease;
 }
@@ -880,30 +954,37 @@ input:valid ~ label{
 form .btn{
     position: relative;
     display: inline-block;
+    z-index: 1;
+
     border: 0;
-    max-width: 32rem;
     border-radius: 1rem;
+
+    max-width: 32rem;
+    padding: 1.5rem;
     text-align: center;
     font-size: 1.4rem;
-    text-transform: uppercase;
-    padding: 1.5rem;
     font-weight: 500;
+
+    text-transform: uppercase;
     overflow: hidden;
-    z-index: 1;
+  
 }
 form .btn:hover{
     color: var(--white);
 }
 form .btn::before{
     position: absolute;
+    z-index: -1;
     content: '';
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 100%;
+
+    width: 100%;
+    height: 100%;
+
     background: linear-gradient(to right, #ff1d75, #f8902f);
     transition: .2s;
-    z-index: -1;
+    
 }
 form .btn:hover::before{
     left: 0;
@@ -915,29 +996,33 @@ form .btn:hover::before{
 }
 .formlogin .container-form .auth{
     position: relative;
+
     text-align: center;
     font-size: 1.9rem;
+
     margin: 3rem 0 2rem 0;
 }
 .formlogin .container-form .auth::before{
     position: absolute;
     content: '';
     top: 50%;
-    transform: translateY(-50%);
     left:-3rem;
+
     width: 20rem;
     height: .05rem;
     background: var(--black);
+    transform: translateY(-50%);
 }
 .formlogin .container-form .auth::after{
     position: absolute;
     content: '';
     top: 50%;
-    transform: translateY(-50%);
     right:-3rem;
+
     width: 20rem;
     height: .05rem;
     background: var(--black);
+    transform: translateY(-50%);
 }
 .formlogin .container-form .links{
     display: flex;
@@ -952,31 +1037,36 @@ form .btn:hover::before{
     display: flex;
     align-items: center;
     justify-content: center;
+
     background: var(--white);
     border-radius: 2rem;
     box-shadow: 0 .2rem .5rem 0 #888080;
-    font-size: 1.3rem;
     color: #000000;
-    font-weight: 500;
     padding: 1rem 1.2rem;
+    margin: 1.5rem 2rem 0 0;
+
+    font-size: 1.3rem;
+    font-weight: 500;
     text-align: center;
     line-height: 2.2rem;
-    margin: 1.5rem 2rem 0 0;
 }
 .formlogin .container-form .links .google{
     display: flex;
     align-items: center;
     justify-content: center;
+
     background: var(--white);
+    color: #000000;
+
     border-radius: 2rem;
     box-shadow: 0 .2rem .5rem 0 #888080;
-    font-size: 1.3rem;
-    color: #000000;
-    font-weight: 500;
     padding: 1rem 2rem 1rem 1rem;
-    text-align: center;
     margin: 1.5rem 1.5rem 0 0;
-      
+   
+
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;    
 }
 .formlogin .container-form .links .facebook .fab{
     margin-right: .5rem;
