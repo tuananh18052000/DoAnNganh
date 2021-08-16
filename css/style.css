@@ -522,6 +522,10 @@ figure.effect-apopllo:hover figcaption::before{
     justify-content: space-around;
     align-items: center;
 }
+.shopping .container-shopping .container-shopping-content .content-tilte .content-choose .content-text a{
+    font-size: 1.4rem;
+    color: var(--white);
+}
 .shopping .container-shopping .container-shopping-image{
     display: flex;
     justify-content: space-between;
@@ -698,35 +702,301 @@ figure.effect-apopllo:hover figcaption::before{
     background-color: #eee;
     color: var(--black);
 }
+/*Footer*/
+.footer{
+    padding: 5rem 0 8rem;
+    background: #000000;
+    overflow: hidden;
+}
+.footer .container-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 7rem;
+}
+.footer .container-box .footer-time{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .container-box .footer-time .cols{
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem;  
+}
+.footer .container-box .footer-time .cols span{
+    color: var(--white);
+    line-height: 3.6rem;
+    font-size: 1.5rem;
+}
+.footer .container-box .footer-time .footer-times span{
+    color: #fbb403;
+    font-weight: 500;
+}
+.footer .container-box .footer-address{
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem;
+    line-height: 3.6rem;
+}
+.footer .container-box .footer-address .footer-address-tilte{
+    margin-bottom: 3rem;
+}
+.footer .container-box .footer-address .footer-address-tilte h4{
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.footer .container-box .footer-address .footer-contact ul{
+    display: flex; 
+    flex-direction: column;
+    padding: 0;
+}
+.footer .container-box .footer-address .footer-contact ul li a{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.footer .container-box .footer-address .footer-contact ul li i{
+    margin-right: 1rem;
+    color: #fbb403;
+}
+.footer .container-box .footer-address .footer-sci ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.footer .container-box .footer-address .footer-sci ul li{
+    margin-right: 3rem;
+    cursor: pointer;
+}
+.footer .container-box .footer-address .footer-sci ul li i{
+    font-size: 2rem;
+}
+.fa-facebook{
+    color: #2d88ff;
+}
+.fa-twitter{
+    color: #5da9dd;
+}
+.fa-instagram{
+    color: #f56040;
+}
+.fa-youtube{
+    color: #ff0000;
+}
+.fa-linkedin-in{
+    color: #1a0dab;
+}
+.footer .container-box .footer-address .footer-map{
+    padding: 3.2rem;
+}
 
 
 
 
+/*Login Sign Page*/
+
+.formlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg,rgb(226, 217, 217),#fff);
+}
+.formlogin .container-form{
+    position: relative;
+    width: 60rem;
+    background: var(--white);
+    padding: 6rem 4rem;
+    box-shadow: var(--box-shadow);
+}
+.formlogin .container-form .header{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.form-signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-group, 
+form .button{
+    margin: 2.5rem 0;
+    position: relative;
+    height: 5rem;
+    width: 100%;
+}
+.form-group input{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    background-color: #f8f9fb;
+    border: 0;
+    color: #212144;
+    font-size: 1.3rem;
+    transition: all 0.4s ease;
+}
+input:focus{
+    background-color: white;
+    box-shadow: 0 1rem 2rem 0 rgba(163, 165, 178, 0.4);
+}
+.form-group label{
+    left: 1.5rem;
+    pointer-events: none;
+    color: grey;
+    font-size: 1.8rem;
+    transition: all .4s ease;
+}
+.form-group label,
+span.show{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.form-group span.show{
+    right: 2rem;
+    color: #111;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    visibility: hidden;   
+}
+input:valid ~ span.show{
+    visibility: visible;
+}
+input:focus ~ label,
+input:valid ~ label{
+  transform: translateY(-4rem);
+  font-size: 1.6rem;
+  color: #609ec5;
+}
+form .btn{
+    position: relative;
+    display: inline-block;
+    border: 0;
+    max-width: 32rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 1;
+}
+form .btn:hover{
+    color: var(--white);
+}
+form .btn::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    background: linear-gradient(to right, #ff1d75, #f8902f);
+    transition: .2s;
+    z-index: -1;
+}
+form .btn:hover::before{
+    left: 0;
+}
+.btn-gradient {
+    background: linear-gradient(to left, #ff1d75, #f8902f);
+    width: 100%;
+    color: white;
+}
+.formlogin .container-form .auth{
+    position: relative;
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 3rem 0 2rem 0;
+}
+.formlogin .container-form .auth::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left:-3rem;
+    width: 20rem;
+    height: .05rem;
+    background: var(--black);
+}
+.formlogin .container-form .auth::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right:-3rem;
+    width: 20rem;
+    height: .05rem;
+    background: var(--black);
+}
+.formlogin .container-form .links{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.formlogin .container-form .links .facebook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 2rem;
+    box-shadow: 0 .2rem .5rem 0 #888080;
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: 500;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    line-height: 2.2rem;
+    margin: 1.5rem 2rem 0 0;
+}
+.formlogin .container-form .links .google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 2rem;
+    box-shadow: 0 .2rem .5rem 0 #888080;
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: 500;
+    padding: 1rem 2rem 1rem 1rem;
+    text-align: center;
+    margin: 1.5rem 1.5rem 0 0;
+      
+}
+.formlogin .container-form .links .facebook .fab{
+    margin-right: .5rem;
+    font-size: 2.4rem;
+}
+.formlogin .container-form .links .google img{
+    margin-right: .5rem;
+} 
+.formlogin .container-form .signup{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #999;
+}
+.formlogin .container-form .signup a{
+    color: #ff514e;
+    font-size: 13px;
+    font-weight: 700;
+}
 
 
 
@@ -801,9 +1071,6 @@ figure.effect-apopllo:hover figcaption::before{
         margin: 2rem;
         font-size: 2rem;
     }
-    .header-topbar-grid1 p {
-        font-size: 2rem;
-    }
     .product .title{
         margin: 2rem auto;
     }
@@ -842,6 +1109,16 @@ figure.effect-apopllo:hover figcaption::before{
     }
 }
 @media(max-width:600px){
+    .header-topbar-grid1 p {
+        font-size: 2rem;
+        margin-top: -2rem;
+    }
+    .header-topbar-grid2 ul {
+        margin-left: -5rem;
+    }
+    .header-topbar-grid2 ul li a{
+        font-size: 2rem;
+    }
     .shopping .container-shopping .container-shopping-content .content-tilte .content-choose{
         max-width: 60rem;
     }
@@ -867,6 +1144,32 @@ figure.effect-apopllo:hover figcaption::before{
     .shopping .container-shopping .container-shopping-image .image span:nth-child(4){
         background-position-x: -24rem;
         transition-delay: .6s;
+    }
+    .footer .container-box{
+        padding: 0;
+    }
+    .footer .container-box .footer-time .cols{
+        padding: 1.2rem;  
+    }
+    .formlogin .container-form{
+        margin: 1rem;
+        padding: 2rem;
+    }
+    .formlogin .container-form .auth::before{
+        width: 6rem;
+        left: -.5rem;
+    }
+    .formlogin .container-form .auth::after{
+        width: 6rem;
+        right: -.5rem;
+    }
+    .formlogin .container-form .auth::before{
+        width: 14rem;
+        left: -.5rem;
+    }
+    .formlogin .container-form .auth::after{
+        width: 14rem;
+        right: -.5rem;
     }
 }
 @media(max-width:480px){
@@ -909,6 +1212,14 @@ figure.effect-apopllo:hover figcaption::before{
     .shopping .container-shopping .container-shopping-content .content-tilte .content-choose{
         max-width: 30rem;
     }
+    .formlogin .container-form .auth::before{
+        width: 9rem;
+        left: -.5rem;
+    }
+    .formlogin .container-form .auth::after{
+        width: 9rem;
+        right: -.5rem;
+    }
 }
 
 @media(max-width:320px){
@@ -920,5 +1231,14 @@ figure.effect-apopllo:hover figcaption::before{
     }   
     .shopping .image .image-men .face{
         margin: 0 .5rem;
+    }
+    
+    .formlogin .container-form .auth::before{
+        width: 6rem;
+        left: -.5rem;
+    }
+    .formlogin .container-form .auth::after{
+        width: 6rem;
+        right: -.5rem;
     }
 }
