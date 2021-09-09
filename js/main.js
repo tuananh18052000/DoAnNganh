@@ -37,10 +37,8 @@ var swiper = new Swiper(".banner-slider", {
   const img = document.querySelector('.images .img-2');
   const dragLine = document.querySelector('.slider .drag-line');
 
-  slider.oninput = () =>{
+  slider.oninput = function(){
     let sliderVal = slider.value;
     dragLine.style.left = sliderVal + '%';
     img.style.width = sliderVal + '%';
   }
-  
-  
